@@ -7,5 +7,14 @@
 
 from .distillation import Distillation
 from .ppo import PPO
+from ._distillation_legacy import DistillationLegacy  # noqa: I001
+from .distillation_dagger import DistillationDAgger
+from .distillation_dagger_weighted import DistillationDAggerWeighted
 
-__all__ = ["PPO", "Distillation"]
+__all__ = [
+    "PPO",
+    "Distillation",
+    "DistillationDAgger",
+    "DistillationDAggerWeighted",
+    "DistillationLegacy",
+]
